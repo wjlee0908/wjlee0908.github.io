@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/wjlee0908.github.io",
+  basePath: process.env.NODE_ENV === "production" ? "/wjlee0908.github.io" : "",
+  images: {
+    unoptimized: true,
+  },
 };
 
 module.exports = nextConfig;
