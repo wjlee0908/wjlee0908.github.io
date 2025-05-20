@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
@@ -13,7 +12,7 @@ export default async function BlogPage() {
   const posts = allPosts
     .filter((post) => post.published)
     .sort((a, b) => {
-      return compareDesc(new Date(a.date), new Date(b.date));
+      return compareDesc(new Date(a.published), new Date(b.published));
     });
 
   return (
@@ -31,28 +30,15 @@ export default async function BlogPage() {
       <hr className="my-8" />
       {posts?.length ? (
         <div className="grid gap-10 sm:grid-cols-2">
-          {posts.map((post, index) => (
+          {posts.map((post) => (
             <article
               key={post._id}
               className="group relative flex flex-col space-y-2"
             >
-              {post.image && (
-                <Image
-                  src={post.image}
-                  alt={post.title}
-                  width={804}
-                  height={452}
-                  className="rounded-md border bg-muted transition-colors"
-                  priority={index <= 1}
-                />
-              )}
               <h2 className="text-2xl font-extrabold">{post.title}</h2>
-              {post.description && (
-                <p className="text-muted-foreground">{post.description}</p>
-              )}
-              {post.date && (
+              {post.published && (
                 <p className="text-sm text-muted-foreground">
-                  {formatDate(post.date)}
+                  {formatDate(post.published)}
                 </p>
               )}
               <Link href={post.slug} className="absolute inset-0">
