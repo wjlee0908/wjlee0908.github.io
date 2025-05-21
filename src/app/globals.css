@@ -1,15 +1,14 @@
 @import "tailwindcss";
+@import "../styles/fonts.css";
 
 @theme {
-  --font-heading: Geist;
-  --font-body: Geist;
-
   --border: 214.3 31.8% 91.4%;
   --muted-foreground: 215.4 16.3% 46.9%;
 }
 
 @layer base {
-  * {
+  body {
+    font-family: var(--font-pretendard);
     border-color: hsl(var(--border));
   }
 

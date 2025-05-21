@@ -1,17 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
+import localFont from "next/font/local";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const pretendard = localFont({
+  src: "../../public/fonts/PretendardVariable.woff2",
+  display: "swap",
+  weight: "45 920",
+  variable: "--font-pretendard",
 });
 
 export const metadata: Metadata = {
@@ -26,14 +23,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${pretendard.variable} antialiased`}>
         <div className="flex min-h-screen flex-col">
           <header className="container z-40 bg-background">
             <div className="flex h-20 items-center justify-between py-6">
               <Link href="/" className="hidden items-center space-x-2 md:flex">
-                <span className="hidden font-bold sm:inline-block">
+                <span className="text-heading2 font-bold">
                   {siteConfig.name}
                 </span>
               </Link>

@@ -1,0 +1,131 @@
+:root {
+  --font-sans: "Pretendard", sans-serif;
+}
+
+/* Typography utility classes */
+
+.text-display1 {
+  font-family: var(--font-sans);
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.0319em;
+}
+
+.text-display2 {
+  font-family: var(--font-sans);
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -0.0282em;
+}
+
+.text-title1 {
+  font-family: var(--font-sans);
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.027em;
+}
+
+.text-title2 {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.0236em;
+}
+
+.text-title3 {
+  font-family: var(--font-sans);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.023em;
+}
+
+.text-heading1 {
+  font-family: var(--font-sans);
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.0194em;
+}
+
+.text-heading2 {
+  font-family: var(--font-sans);
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.012em;
+}
+
+.text-headline1 {
+  font-family: var(--font-sans);
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.002em;
+}
+
+.text-headline2 {
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.text-body1-normal {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.0057em;
+}
+
+.text-body1-reading {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.0057em;
+}
+
+.text-body2-normal {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.0096em;
+}
+
+.text-body2-reading {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 24px;
+  letter-spacing: 0.0096em;
+}
+
+.text-label1-normal {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.0145em;
+}
+
+.text-label1-reading {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.0145em;
+}
+
+.text-label2 {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 0.0194em;
+}
+
+.text-caption1 {
+  font-family: var(--font-sans);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.0252em;
+}
+
+.text-caption2 {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.0311em;
+}

@@ -19,15 +19,13 @@ export default async function BlogPage() {
     <div className="container max-w-4xl py-6 lg:py-10">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
-          <h1 className="inline-block font-heading text-4xl tracking-tight lg:text-5xl">
-            Blog
-          </h1>
-          <p className="text-xl text-muted-foreground">
+          <h1 className="text-title1 font-bold inline-block">Blog</h1>
+          <p className="text-body1-normal text-muted-foreground">
             A blog built using Contentlayer. Posts are written in MDX.
           </p>
         </div>
       </div>
-      <hr className="my-8" />
+      <hr className="my-8 border-neutral-50" />
       {posts?.length ? (
         <div className="grid gap-10 sm:grid-cols-2">
           {posts.map((post) => (
@@ -35,9 +33,9 @@ export default async function BlogPage() {
               key={post._id}
               className="group relative flex flex-col space-y-2"
             >
-              <h2 className="text-2xl font-extrabold">{post.title}</h2>
+              <h2 className="text-title2 text-bold font-bold">{post.title}</h2>
               {post.published && (
-                <p className="text-sm text-muted-foreground">
+                <p className="text-caption1 text-muted-foreground">
                   {formatDate(post.published)}
                 </p>
               )}
