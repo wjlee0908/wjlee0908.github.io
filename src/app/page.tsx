@@ -39,7 +39,7 @@ export default async function BlogPage() {
                   {formatDate(post.published)}
                 </p>
               )}
-              <Link href={post.slug} className="absolute inset-0">
+              <Link href={`/posts/${post.slug}`} className="absolute inset-0">
                 <span className="sr-only">View Article</span>
               </Link>
             </article>

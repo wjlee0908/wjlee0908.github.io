@@ -8,11 +8,14 @@
     "start": "next start",
     "lint": "next lint",
     "export": "next export",
-    "deploy": "touch out/.nojekyll && gh-pages -d out -t"
+    "deploy": "touch out/.nojekyll && gh-pages -d out -t",
+    "contentlayer": "contentlayer"
   },
   "dependencies": {
     "contentlayer": "^0.3.4",
     "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
+    "lucide-react": "^0.511.0",
     "next": "15.3.2",
     "next-contentlayer": "^0.3.4",
     "react": "^19.0.0",

@@ -10,11 +10,6 @@ const computedFields: ComputedFields = {
     type: "string",
     resolve: (doc: LocalDocument) => `/${doc._raw.flattenedPath}`,
   },
-  slugAsParams: {
-    type: "string",
-    resolve: (doc: LocalDocument) =>
-      doc._raw.flattenedPath.split("/").slice(1).join("/"),
-  },
 };
 export const Post = defineDocumentType(() => ({
   name: "Post",
